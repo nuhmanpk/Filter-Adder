@@ -1,4 +1,4 @@
-#Copycats should Give a Credit
+## Copycats should Give a Credit
  Try mentioning me in your main.py 😋
 # tgbot
 A modular telegram Python bot running on python3 with an sqlalchemy database.
