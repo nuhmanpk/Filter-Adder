@@ -21,7 +21,7 @@ PM_START_TEXT = """
 
  എന്നെ ഉപയോഗിക്കേണ്ടത് എങ്ങനെ ആണെന്നുള്ളതിൽ എന്തേലും സംശയം ഉണ്ടെങ്കിൽ /help
 
-എന്നെ നിർമിച്ചത് [ഇദ്ദേഹം](tg://user?id=778307700) ആണ് . എന്നെ നിർമിച്ചിരിക്കുന്നത് python3യിൽ 
+എന്നെ നിർമിച്ചത് [bughunter0](tg://user?id=778307700) ആണ് . എന്നെ നിർമിച്ചിരിക്കുന്നത് python3യിൽ 
 python-telegram-bot library ഉപയോഗിച്ചാണ്.... ഞാൻ പൂർണമായും opensource ആണ്..
 Source code ലഭിക്കുവാൻ @bughunterbots അവിടെ വരുക,
 
@@ -30,9 +30,6 @@ Consider joining on @bughunterbots for further updates
 """
 
 HELP_STRINGS = """
-നമസ്കാരം ! എന്റെ പേര് *{}*.
-
-ഞാൻ ടെലെഗ്രാമിലെ Group Management Bot ആണ്... എന്നെ പ്രവർത്തിപ്പിക്കേണ്ട വിധം ആണ് താഴെ കൊടുത്തിട്ടുള്ളത്....
 
 *Main* ലഭ്യമായ commandകൾ:
  - /start: Botന് ജീവനുണ്ടോ എന്നറിയാൻ...
