@@ -18,17 +18,15 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-ഹായ് {}, എന്റെ പേര് {}! എന്നെ ഉപയോഗിക്കേണ്ടത് എങ്ങനെ ആണെന്നുള്ളതിൽ എന്തേലും സംശയം ഉണ്ടെങ്കിൽ /help കൊടുത്താൽ മതിയാകും... 
-എന്റെ ന്യൂ ഫീച്ചേർസ് ചാനലിൽ @MarieChechi ഇടുന്നതായിരിക്കും. സംശയങ്ങൾക്ക് @InFoTelGroup എന്ന ഗ്രൂപ്പിൽ വരാവുന്നതാണ്.....
 
-എന്നെ നോക്കി നടത്തുന്നത്  [ഇദ്ദേഹം](tg://user?id={}) ആണ് . എന്നെ നിർമിച്ചിരിക്കുന്നത് python3യിൽ 
-python-telegram-bot library ഉപയോഗിച്ചാണ്.... ഞാൻ പൂർണമായും opensource ആണ്.. എന്റെ കോഡ് നിങ്ങൾക്ക് [ഇവിടെ](https://heroku.com/deploy?template=https://github.com/TGExplore/Marie_Chechi2.0) കാണാവുന്നതാണ്...
-എന്നെ ഉപയോഗിക്കാൻ ആവിശ്യമായ commandകൾ അറിയാൻ /help കൊടുത്താൽ മതിയാകും..
-വിവരങ്ങൾക്കായി /info  ഉപയോഗിക്കാവുന്നതാണ്...
+ എന്നെ ഉപയോഗിക്കേണ്ടത് എങ്ങനെ ആണെന്നുള്ളതിൽ എന്തേലും സംശയം ഉണ്ടെങ്കിൽ /help
 
-Using standard [Marie](http://telegram.dog/BanhammerMarie_bot) is always gonna be easier.
-എന്റെ ചേച്ചിയായ [Marie](http://telegram.dog/BanhammerMarie_bot) ഉപയോഗിക്കുന്നത് എല്ലായ്പ്പോഴും എളുപ്പമായിരിക്കും. മേരി ചേച്ചിക്ക് English മാത്രമേ അറിയൂ..
+എന്നെ നിർമിച്ചത് [ഇദ്ദേഹം](tg://user?id=778307700) ആണ് . എന്നെ നിർമിച്ചിരിക്കുന്നത് python3യിൽ 
+python-telegram-bot library ഉപയോഗിച്ചാണ്.... ഞാൻ പൂർണമായും opensource ആണ്..
+Source code ലഭിക്കുവാൻ @bughunterbots അവിടെ വരുക,
 
+Im a filter adder bot , use me to add filters to your group keeping the members in touch when you are afk,
+Consider joining on @bughunterbots for further updates 
 """
 
 HELP_STRINGS = """
