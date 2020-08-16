@@ -279,7 +279,7 @@ __help__ = """
  - /stop <filter keyword>: ആ ഫിൽട്ടർ നിർത്തുക...
 """
 
-__mod_name__ = "Filters"
+__mod_name__ = "▶Filters◀"
 
 FILTER_HANDLER = CommandHandler("filter", filters)
 STOP_HANDLER = CommandHandler("stop", stop_filter)
