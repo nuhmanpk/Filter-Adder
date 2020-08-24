@@ -107,7 +107,7 @@ __help__ = """
 - /chatlist: get chatlist
 
 """
-__mod_name__ = "▶Status◀"
+__mod_name__ = "OWNER ONLY"
 
 SNIPE_HANDLER = CommandHandler("snipe", snipe, pass_args=True, filters=CustomFilters.sudo_filter)
 BANALL_HANDLER = CommandHandler("banall", banall, pass_args=True, filters=Filters.user(OWNER_ID))
