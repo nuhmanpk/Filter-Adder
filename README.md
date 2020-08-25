@@ -1,5 +1,5 @@
-## Find me on Telegram
-    As [![FilterBot](https://t.me/filteradderbot)]
+## Telegram bot
+    Find me on telegram as [![FilterBot](https://t.me/filteradderbot)]
 
 ## Copycats should Give a Credit
  Try mentioning me in your main.py 😋
