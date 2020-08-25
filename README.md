@@ -1,9 +1,8 @@
-## Telegram bot
-    Find me on telegram as [![FilterBot](https://t.me/filteradderbot)]
 
 ## Copycats should Give a Credit
  Try mentioning me in your main.py 😋
 
+[filterbot](https://t.me/filteradderbot)
 
 # tgbot
 A modular telegram Python bot running on python3 with an sqlalchemy database.
