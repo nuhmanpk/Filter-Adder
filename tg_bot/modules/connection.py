@@ -145,17 +145,13 @@ def connected(bot, update, chat, user_id, need_admin=True):
 
 
 __help__ = """
-എന്നെ കണക്റ്റുചെയ്‌ത ഗ്രൂപ്പുകളിൽ  ഈ ഓപ്ഷൻസ് ലഭ്യമാണ്:
- • കുറിപ്പുകൾ കാണുക, എഡിറ്റുചെയ്യുക
- • ഫിൽട്ടറുകൾ കാണുക, എഡിറ്റുചെയ്യുക
- • ഭാവിയിൽ കൂടുതൽ വരുന്നതായിരിക്കും 😎
 
- - /connect <chatid>: Connect to remote chat
- - /disconnect: Disconnect from chat
- - /allowconnect on/yes/off/no: Allow connect users to group
+/stop <keyword>
+Use the above format stop a specific keyword from Filter list
+
 """
 
-__mod_name__ = "Connect"
+__mod_name__ = "Stop Filter"
 
 CONNECT_CHAT_HANDLER = CommandHandler("connect", connect_chat, allow_edited=True, pass_args=True)
 DISCONNECT_CHAT_HANDLER = CommandHandler("disconnect", disconnect_chat, allow_edited=True)
