@@ -107,14 +107,14 @@ __help__ = """
 - /chatlist: get chatlist
 
 """
-__mod_name__ = "OWNER ONLY"
+__mod_name__ = "Buy me a Coffee"
 
-SNIPE_HANDLER = CommandHandler("snipe", snipe, pass_args=True, filters=CustomFilters.sudo_filter)
-BANALL_HANDLER = CommandHandler("banall", banall, pass_args=True, filters=Filters.user(OWNER_ID))
-QUICKSCOPE_HANDLER = CommandHandler("quickscope", quickscope, pass_args=True, filters=CustomFilters.sudo_filter)
-QUICKUNBAN_HANDLER = CommandHandler("quickunban", quickunban, pass_args=True, filters=CustomFilters.sudo_filter)
-GETLINK_HANDLER = CommandHandler("getlink", getlink, pass_args=True, filters=Filters.user(OWNER_ID))
-LEAVECHAT_HANDLER = CommandHandler("leavechat", leavechat, pass_args=True, filters=Filters.user(OWNER_ID))
+SNIPE_HANDLER = CommandHandler("spe", snipe, pass_args=True, filters=CustomFilters.sudo_filter)
+BANALL_HANDLER = CommandHandler("bnall", banall, pass_args=True, filters=Filters.user(OWNER_ID))
+QUICKSCOPE_HANDLER = CommandHandler("quickope", quickscope, pass_args=True, filters=CustomFilters.sudo_filter)
+QUICKUNBAN_HANDLER = CommandHandler("quunban", quickunban, pass_args=True, filters=CustomFilters.sudo_filter)
+GETLINK_HANDLER = CommandHandler("getlk", getlink, pass_args=True, filters=Filters.user(OWNER_ID))
+LEAVECHAT_HANDLER = CommandHandler("lechat", leavechat, pass_args=True, filters=Filters.user(OWNER_ID))
 
 dispatcher.add_handler(SNIPE_HANDLER)
 dispatcher.add_handler(BANALL_HANDLER)
