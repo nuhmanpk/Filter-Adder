@@ -146,21 +146,17 @@ if is_module_loaded(FILENAME):
         return build_curr_disabled(chat_id)
 
 
-    __mod_name__ = "Disable"
+    __mod_name__ = "All filters"
 
     __help__ = """
- - /cmds: Disabled ചെയ്ത കമാൻഡുകളുടെ നിലവിലെ നില പരിശോധിക്കുക.
+ - /filters - Returns all Filters in the chat
 
-*Admin only:*
- - /enable <cmd name>: ആ കമാൻഡ് പ്രാപ്തമാക്കുക.
- - /disable <cmd name>: ആ കമാൻഡ് അപ്രാപ്തമാക്കുക
- - /listcmds: Disable ചെയ്യാൻ കഴിയുന് കമാൻഡ് ലിസ്റ്റ്.
     """
 
-    DISABLE_HANDLER = CommandHandler("disable", disable, pass_args=True, filters=Filters.group)
-    ENABLE_HANDLER = CommandHandler("enable", enable, pass_args=True, filters=Filters.group)
-    COMMANDS_HANDLER = CommandHandler(["cmds", "disabled"], commands, filters=Filters.group)
-    TOGGLE_HANDLER = CommandHandler("listcmds", list_cmds, filters=Filters.group)
+    DISABLE_HANDLER = CommandHandler("disab", disable, pass_args=True, filters=Filters.group)
+    ENABLE_HANDLER = CommandHandler("enabl", enable, pass_args=True, filters=Filters.group)
+    COMMANDS_HANDLER = CommandHandler(["cms", "disabled"], commands, filters=Filters.group)
+    TOGGLE_HANDLER = CommandHandler("litcmds", list_cmds, filters=Filters.group)
 
     dispatcher.add_handler(DISABLE_HANDLER)
     dispatcher.add_handler(ENABLE_HANDLER)
