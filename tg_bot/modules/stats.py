@@ -102,9 +102,8 @@ def leavechat(bot: Bot, update: Update, args: List[int]):
         update.effective_message.reply_text("You don't seem to be referring to a chat")
 
 __help__ = """
-
-- /Stats: check bot's stats
-- /chatlist: get chatlist
+Hai , as you know Hosting & Maintaining a Service will cost a little bit, You can help me By a donation,
+Feel free to contact me in PM on @bughunter0
 
 """
 __mod_name__ = "Buy me a Coffee"
