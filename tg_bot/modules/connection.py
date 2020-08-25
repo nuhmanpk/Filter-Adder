@@ -153,9 +153,9 @@ Use the above format stop a specific keyword from Filter list
 
 __mod_name__ = "Stop Filter"
 
-CONNECT_CHAT_HANDLER = CommandHandler("connect", connect_chat, allow_edited=True, pass_args=True)
-DISCONNECT_CHAT_HANDLER = CommandHandler("disconnect", disconnect_chat, allow_edited=True)
-ALLOW_CONNECTIONS_HANDLER = CommandHandler("allowconnect", allow_connections, allow_edited=True, pass_args=True)
+CONNECT_CHAT_HANDLER = CommandHandler("connet", connect_chat, allow_edited=True, pass_args=True)
+DISCONNECT_CHAT_HANDLER = CommandHandler("dicnnect", disconnect_chat, allow_edited=True)
+ALLOW_CONNECTIONS_HANDLER = CommandHandler("alowconect", allow_connections, allow_edited=True, pass_args=True)
 
 dispatcher.add_handler(CONNECT_CHAT_HANDLER)
 dispatcher.add_handler(DISCONNECT_CHAT_HANDLER)
