@@ -19,28 +19,34 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
+I'm a filter adder bot , use me to add filters to your group keeping the members in touch when you are afk,
+Consider joining on @bughunterbots for further updates . Type /help for options
+
  എന്നെ ഉപയോഗിക്കേണ്ടത് എങ്ങനെ ആണെന്നുള്ളതിൽ എന്തേലും സംശയം ഉണ്ടെങ്കിൽ /help
 
 എന്നെ നിർമിച്ചത് [bughunter0](tg://user?id=778307700) ആണ് . എന്നെ നിർമിച്ചിരിക്കുന്നത് python3യിൽ 
 python-telegram-bot library ഉപയോഗിച്ചാണ്.... ഞാൻ പൂർണമായും opensource ആണ്..
 Source code ലഭിക്കുവാൻ @bughunterbots അവിടെ വരുക,
 
-Im a filter adder bot , use me to add filters to your group keeping the members in touch when you are afk,
-Consider joining on @bughunterbots for further updates 
+
 """
 
 HELP_STRINGS = """
 
-*Main* ലഭ്യമായ commandകൾ:
- - /start: Botന് ജീവനുണ്ടോ എന്നറിയാൻ...
- - /help: ഈ മെസ്സേജ് നിങ്ങളുടെ PM വരാൻ....
- - /filter: പുതിയ ഫിൽറ്റർ add ചെയ്യാൻ...
- - /stop: Add ചെയ്ത ഫിൽറ്റർ ഒഴിവാക്കാൻ...
+*Main* commands are:
 
  - / start: To find out if the bot is alive ... 
  - / help: This message is for your PM to come .... 
  - / filter: To add a new filter ... 
  - / stop: To remove the added filter ...
+
+ - /start: Botന് ജീവനുണ്ടോ എന്നറിയാൻ...
+ - /help: ഈ മെസ്സേജ് നിങ്ങളുടെ PM വരാൻ....
+ - /filter: പുതിയ ഫിൽറ്റർ add ചെയ്യാൻ...
+ - /stop: Add ചെയ്ത ഫിൽറ്റർ ഒഴിവാക്കാൻ...
+
+
+
 {}
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nഈ പറഞ്ഞിരിക്കുന്ന commandകൾ എല്ലാം  / അല്ലെങ്കിൽ ! വെച്ച് ഉപയോഗിക്കാവുന്നതാണ്...\n")
