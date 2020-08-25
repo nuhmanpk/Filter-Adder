@@ -1,5 +1,5 @@
 ## Find me on Telegram as
-     [FILTERADDERBOT](https://t.me/filteradderbot)
+     [FilterBot](https://t.me/filteradderbot)
 
 ## Copycats should Give a Credit
  Try mentioning me in your main.py 😋
