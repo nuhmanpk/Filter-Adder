@@ -18,6 +18,9 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
+*Note*
+Use /add to add filter in chat
+/filter will not work for me..
 
 I'm a filter adder bot , use me to add filters to your group keeping the members in touch when you are afk,
 Consider joining on @bughunterbots for further updates . Type /help for options
@@ -37,12 +40,12 @@ HELP_STRINGS = """
 
  - / start: To find out if the bot is alive ... 
  - / help: This message is for your PM to come .... 
- - / filter: To add a new filter ... 
+ - */ add*: To add a new filter ... 
  - / stop: To remove the added filter ...
 
  - /start: Botന് ജീവനുണ്ടോ എന്നറിയാൻ...
  - /help: ഈ മെസ്സേജ് നിങ്ങളുടെ PM വരാൻ....
- - /filter: പുതിയ ഫിൽറ്റർ add ചെയ്യാൻ...
+ - */add*: പുതിയ ഫിൽറ്റർ add ചെയ്യാൻ...
  - /stop: Add ചെയ്ത ഫിൽറ്റർ ഒഴിവാക്കാൻ...
 
 
@@ -51,11 +54,10 @@ HELP_STRINGS = """
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nഈ പറഞ്ഞിരിക്കുന്ന commandകൾ എല്ലാം  / അല്ലെങ്കിൽ ! വെച്ച് ഉപയോഗിക്കാവുന്നതാണ്...\n")
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
-It took lots of work for [my creator](t.me/sonoflars) to get me to where I am now, and every donation helps \
-motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
-(see his bio!). He's just a poor student, so every little helps!
-There are two ways of paying him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+DONATE_STRING = """
+
+
+"""
 
 IMPORTED = {}
 MIGRATEABLE = []
