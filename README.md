@@ -1,5 +1,10 @@
+## Find me on Telegram as
+     [FILTER ADDER BOT](https://t.me/filteradderbot)
+
 ## Copycats should Give a Credit
  Try mentioning me in your main.py 😋
+
+
 # tgbot
 A modular telegram Python bot running on python3 with an sqlalchemy database.
 (ഒരു മോഡുലാർ ടെലിഗ്രാം പൈത്തൺ ബോട്ട് പൈത്തൺ 3-ൽ ഒരു സ്ക്ലാൽ‌ചെമി ഡാറ്റാബേസ് ഉപയോഗിച്ച് പ്രവർത്തിക്കുന്നു.)
