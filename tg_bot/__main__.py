@@ -18,7 +18,9 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-*Note*
+*Thank God I'M Up, @bughunter0 work asleep to keep me up*
+
+
 Use /add to add filter in chat
 /filter will not work for me..
 
@@ -27,9 +29,7 @@ Consider joining on @bughunterbots for further updates . Type /help for options
 
  എന്നെ ഉപയോഗിക്കേണ്ടത് എങ്ങനെ ആണെന്നുള്ളതിൽ എന്തേലും സംശയം ഉണ്ടെങ്കിൽ /help
 
-എന്നെ നിർമിച്ചത് [bughunter0](tg://user?id=778307700) ആണ് . എന്നെ നിർമിച്ചിരിക്കുന്നത് python3യിൽ 
-python-telegram-bot library ഉപയോഗിച്ചാണ്.... ഞാൻ പൂർണമായും opensource ആണ്..
-Source code ലഭിക്കുവാൻ @bughunterbots അവിടെ വരുക,
+എന്നെ നിർമിച്ചത് [bughunter0](tg://user?id=778307700) ആണ് .
 
 
 """
