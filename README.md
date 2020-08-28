@@ -1,6 +1,9 @@
+## Rebuild Completely from Scratch
+
+  
 
 ## Copycats should Give a Credit
- Try mentioning me in your main.py 😋
+ Try mentioning me in your  😋
 ### Test me on telegram (all client)
 [Telegram](https://t.me/filteradderbot)
 
