@@ -1,4 +1,4 @@
-## Rebuild Completely from Scratch
+# Rebuild Everything from Scratch
 
   
 
