@@ -34,7 +34,7 @@ def ping(bot: Bot, update: Update):
     for x in range(EDIT_TIMES):
         msg.edit_text(ping-pong[x%5])
         time.sleep(EDIT_SLEEP)
-    msg.edit_text('Hey, I'm Up')
+    msg.edit_text("Hey, I'm Up")
 
 PING_HANDLER = DisableAbleCommandHandler("ping", ping)
 dispatcher.add_handler(PING_HANDLER)
