@@ -459,4 +459,3 @@ def main():
 if __name__ == '__main__':
     LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
     main()
-InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ADD ME⭕️", url="t. me/{}?startgroup=true".format(bot.username))]]
