@@ -20,6 +20,8 @@ from tg_bot.modules.sql import cust_filters_sql as sql
 
 from tg_bot.modules.connection import connected
 
+EDIT_SLEEP = 1
+
 HANDLER_GROUP = 10
 BASIC_FILTER_STRING = "*Filters in this chat:*\n"
 
@@ -146,8 +148,13 @@ def filters(bot: Bot, update: Update):
     sql.add_filter(chat_id, keyword, content, is_sticker, is_document, is_image, is_audio, is_voice, is_video,
                    buttons)
 
-    msg.reply_text("Filter '{}' added in *{}*! By @filteradderbot".format(keyword, chat_name), parse_mode=telegram.ParseMode.MARKDOWN)
+    msg.reply_text("Filter '{}' added in *{}*! By @filteradderbot".format(keyword, chat_name), parse_mode=telegram.ParseMode.MARKDOWN))
+        time.sleep(EDIT_SLEEP)
+    msg.edit_text.delete()
     raise DispatcherHandlerStop
+
+
+
 
 
 # NOT ASYNC BECAUSE DISPATCHER HANDLER RAISED
