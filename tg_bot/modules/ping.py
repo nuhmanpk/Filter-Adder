@@ -17,7 +17,7 @@ from tg_bot.modules.helper_funcs.extraction import extract_user
 EDIT_SLEEP = 1
 EDIT_TIMES = 10
 
-ping-pong = [
+pingpong = [
             "Checking Webhooks ",
             "Webhook found ! ",
             "Send server Request",
@@ -32,7 +32,7 @@ ping-pong = [
 def ping(bot: Bot, update: Update):
     msg = update.effective_message.reply_text('Checking server status') 
     for x in range(EDIT_TIMES):
-        msg.edit_text(ping-pong[x%5])
+        msg.edit_text(pingpong[x%5])
         time.sleep(EDIT_SLEEP)
     msg.edit_text("Hey, I'm Up")
 
