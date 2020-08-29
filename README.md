@@ -5,6 +5,7 @@
 ## Copycats should Give a Credit
  Try mentioning me in your  😋
 ### Test me on telegram (all client)
+[[Find Me Here](https://commons.m.wikimedia.org/wiki/File:Telegram_X_2019_Logo.svg)](https://t.me/filteradderbot)
 [Telegram](https://t.me/filteradderbot)
 
 # tgbot
