@@ -14,13 +14,13 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin, user_admin
 from tg_bot.modules.helper_funcs.extraction import extract_user
 
 
-EDIT_SLEEP = 1
-EDIT_TIMES = 10
+EDIT_SLEEP = 3
+EDIT_TIMES = 5
 
 pingpong = [
             "Checking Webhooks ",
             "Webhook found ! ",
-            "Send server Request",
+            "Checking uplink speed",
             "Loading... 20.63%\n[███░░░░░░░░░░░░░░░░░]",    
             "Loading... 86.21%\n[███████████████░░░░░]",
             "Loading... 93.50%\n[█████████████████░░░]",
