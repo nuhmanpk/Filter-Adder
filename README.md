@@ -3,9 +3,9 @@
   
 
 ## Copycats should Give a Credit
- Try mentioning me in your  😋
+ Try mentioning me in your Modules 😋
 ### Test me on telegram (all client)
-[![Link](https://commons.m.wikimedia.org/wiki/File:Telegram_X_2019_Logo.svg)](https://t.me/filteradderbot)
+
 [Telegram](https://t.me/filteradderbot)
 
 # tgbot
