@@ -149,8 +149,6 @@ def filters(bot: Bot, update: Update):
                    buttons)
 
     msg.reply_text("Filter '{}' added in *{}*! By @filteradderbot".format(keyword, chat_name), parse_mode=telegram.ParseMode.MARKDOWN))
-        time.sleep(EDIT_SLEEP)
-    msg.edit_text.delete()
     raise DispatcherHandlerStop
 
 
