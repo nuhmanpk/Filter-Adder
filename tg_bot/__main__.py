@@ -18,9 +18,11 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
+
+
 *Thank God I'M Up, @bughunter0 work asleep to keep me up*
 
-[[InlineKeyboardButton(text="Add me to  Group",url="t me/{}?start=help".format(bot.username))]]))
+
 Use /add to add filter in chat
 /filter will not work for me..
 
@@ -457,3 +459,4 @@ def main():
 if __name__ == '__main__':
     LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
     main()
+InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ADD ME⭕️", url="t. me/{}?startgroup=true".format(bot.username))]]
