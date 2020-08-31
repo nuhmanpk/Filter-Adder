@@ -265,9 +265,6 @@ def stop_all_filters(bot: Bot, update: Update):
     user = update.effective_user
     message = update.effective_message
 
-    permi=input("ARE YOU SURE TO REMOVE ALL FILTERS *ENTER YES TO STOPALL FILTERS*")
- if permi in [ 'y','Y','Yes','yes','YES','yEs']
-
     if chat.type == "private":
         chat.title = "local filters"
     else:
