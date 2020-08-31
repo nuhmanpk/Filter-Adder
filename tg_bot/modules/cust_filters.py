@@ -258,7 +258,37 @@ def reply_filter(bot: Bot, update: Update):
                 # LEGACY - all new filters will have has_markdown set to True.
                 message.reply_text(ad_filter + "\n" + filt.reply)
             break
+@user_admin
+def stop_all_filters(bot: Bot, update: Update):
+    chat = update.effective_chat
+    user = update.effective_user
+    message = update.effective_message
 
+    if chat.type == "private":
+        chat.title = "local filters"
+    else:
+        owner = chat.get_member(user.id)
+        chat.title = chat.title
+        if owner.status != 'creator':
+            message.reply_text("You must be this chat creator.")
+            return
+
+    x = 0
+    flist = sql.get_chat_triggers(chat.id)
+
+    if not flist:
+        message.reply_text("There aren't any active filters in {}!".format(chat.title))
+        return
+
+    f_flist = []
+    for f in flist:
+        x += 1
+        f_flist.append(f)
+
+    for fx in f_flist:
+        sql.remove_filter(chat.id, fx)
+
+    message.reply_text("{} filters from this chat have been removed.".format(x))
 
 def __stats__():
     return "{} filters, across {} chats.".format(sql.num_filters(), sql.num_chats())
