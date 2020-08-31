@@ -244,14 +244,14 @@ def reply_filter(bot: Bot, update: Update):
                     if excp.message == "Unsupported url protocol":
                         message.reply_text("You seem to be trying to use an unsupported url protocol. Telegram "
                                            "doesn't support buttons for some protocols, such as tg://. Please try "
-                                           "again, or ask in @MarieSupport for help.")
+                                           "again, use /help.")
                     elif excp.message == "Reply message not found":
                         bot.send_message(chat.id, filt.reply, parse_mode=ParseMode.MARKDOWN,
                                          disable_web_page_preview=True,
                                          reply_markup=keyboard)
                     else:
                         message.reply_text("This note could not be sent, as it is incorrectly formatted. Ask in "
-                                           "@MarieSupport if you can't figure out why!")
+                                           "/help if you can't figure out why!")
                         LOGGER.warning("Message %s could not be parsed", str(filt.reply))
                         LOGGER.exception("Could not parse filter %s in chat %s", str(filt.keyword), str(chat.id))
 
@@ -290,8 +290,7 @@ def stop_all_filters(bot: Bot, update: Update):
         sql.remove_filter(chat.id, fx)
 
     message.reply_text("{} filters from this chat have been removed.".format(x))
- else:
-      print("STOP ALL FILTER OPTION CANCELED")
+ 
 def __stats__():
     return "{} filters, across {} chats.".format(sql.num_filters(), sql.num_chats())
 
