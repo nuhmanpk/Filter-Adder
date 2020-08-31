@@ -159,8 +159,8 @@ def filters(bot: Bot, update: Update):
 def stop_filter(bot: Bot, update: Update):
     chat = update.effective_chat  # type: Optional[Chat]
     user = update.effective_user  # type: Optional[User]
-    args = update.effective_message.text.split(None, 1)
-
+    args = update.effective_message.text.split(None, 1)   
+    
     conn = connected(bot, update, chat, user.id)
     if not conn == False:
         chat_id = conn
@@ -188,6 +188,7 @@ def stop_filter(bot: Bot, update: Update):
             raise DispatcherHandlerStop
 
     update.effective_message.reply_text("That's not a current filter - run /filters for all active filters.")
+  
 
 
 @run_async
@@ -264,6 +265,9 @@ def stop_all_filters(bot: Bot, update: Update):
     user = update.effective_user
     message = update.effective_message
 
+    permi=input("ARE YOU SURE TO REMOVE ALL FILTERS *ENTER YES TO STOPALL FILTERS*")
+  if permi in [ 'y','Y','Yes','yes','YES','yEs']
+
     if chat.type == "private":
         chat.title = "local filters"
     else:
@@ -289,7 +293,8 @@ def stop_all_filters(bot: Bot, update: Update):
         sql.remove_filter(chat.id, fx)
 
     message.reply_text("{} filters from this chat have been removed.".format(x))
-
+ else:
+      print("STOP ALL FILTER OPTION CANCELED")
 def __stats__():
     return "{} filters, across {} chats.".format(sql.num_filters(), sql.num_chats())
 
