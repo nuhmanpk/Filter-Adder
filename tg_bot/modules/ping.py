@@ -15,16 +15,16 @@ from tg_bot.modules.helper_funcs.extraction import extract_user
 
 
 EDIT_SLEEP = 3
-EDIT_TIMES = 5
+EDIT_TIMES = 8
 
 pingpong = [
-            "Checking Webhooks ",
+            "Checking Webhooks....",
             "Webhook found ! ",
-            "Checking uplink speed",
-            "Loading... 20.63%\n[███░░░░░░░░░░░░░░░░░]",    
-            "Loading... 86.21%\n[███████████████░░░░░]",
-            "Loading... 93.50%\n[█████████████████░░░]",
-            "Loading....  100%\n[████████████████████]",
+            "Checking Server Uplink..",
+            "Loading... 20.63%\n[███░░░░░░░░░░░]",    
+            "Loading... 50.21%\n[███████░░░░░]",
+            "Loading... 93.50%\n[███████████░░░]",
+            "Loading....  100%\n[███████████████]",
 ]
 
 @user_admin
