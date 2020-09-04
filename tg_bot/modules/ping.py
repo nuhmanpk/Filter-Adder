@@ -15,7 +15,7 @@ from tg_bot.modules.helper_funcs.extraction import extract_user
 
 
 EDIT_SLEEP = 3
-EDIT_TIMES = 8
+EDIT_TIMES = 1
 
 pingpong = [
             "Checking Webhooks....",
