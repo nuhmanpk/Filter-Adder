@@ -1,7 +1,7 @@
 
 {
   "name": "FilterAdderBot",
-  "description": "Telegram's sassiest Filter Bot. Modular Telegram group management bot!",
+  "description": "Telegram's new Filter Bot With Unlimited Filters!",
   "keywords": [
     "telegram",
     "best",
@@ -9,7 +9,7 @@
     "filter",
     "3"
   ],
-  "repository": "https://github.com/nuhmanpk7/Filter-Adder",
+  "repository": "Not Now",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable env variables",
