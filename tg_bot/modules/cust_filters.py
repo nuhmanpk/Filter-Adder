@@ -332,9 +332,9 @@ __help__ = """
 __mod_name__ = " Add Filters"
 
 FILTER_HANDLER = CommandHandler("add", filters)
-STOP_HANDLER = CommandHandler("stop", stop_filter)
+STOP_HANDLER = CommandHandler("remove", stop_filter)
 STOPALL_HANDLER = DisableAbleCommandHandler("stopall", stop_all_filters)
-LIST_HANDLER = DisableAbleCommandHandler("filters", list_handlers, admin_ok=True)
+LIST_HANDLER = DisableAbleCommandHandler("listfilter", list_handlers, admin_ok=True)
 CUST_FILTER_HANDLER = MessageHandler(CustomFilters.has_text, reply_filter, edited_updates=True)
 
 dispatcher.add_handler(FILTER_HANDLER)
