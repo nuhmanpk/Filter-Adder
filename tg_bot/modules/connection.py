@@ -146,16 +146,19 @@ def connected(bot, update, chat, user_id, need_admin=True):
 
 __help__ = """
 
-/stop <keyword>
-Use the above format stop a specific keyword from Filter list
+/connect <group_id> 
+
+/disconnect <group_id>
+
+/allowconnect on/off/yes/no
 
 """
 
-__mod_name__ = "Stop Filter"
+__mod_name__ = "Connections"
 
-CONNECT_CHAT_HANDLER = CommandHandler("connet", connect_chat, allow_edited=True, pass_args=True)
-DISCONNECT_CHAT_HANDLER = CommandHandler("dicnnect", disconnect_chat, allow_edited=True)
-ALLOW_CONNECTIONS_HANDLER = CommandHandler("alowconect", allow_connections, allow_edited=True, pass_args=True)
+CONNECT_CHAT_HANDLER = CommandHandler("connect", connect_chat, allow_edited=True, pass_args=True)
+DISCONNECT_CHAT_HANDLER = CommandHandler("disconnect", disconnect_chat, allow_edited=True)
+ALLOW_CONNECTIONS_HANDLER = CommandHandler("allowconnect", allow_connections, allow_edited=True, pass_args=True)
 
 dispatcher.add_handler(CONNECT_CHAT_HANDLER)
 dispatcher.add_handler(DISCONNECT_CHAT_HANDLER)
