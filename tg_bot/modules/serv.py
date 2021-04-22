@@ -2,12 +2,12 @@
 __help__ = """
 ◆ Bot Name : *Filter Adder*
 ◆ Creator : [BUGHUNTER](http://t.me//bughunter0)
-◆ Credits :  [Infotel Admins](https://t.me/InFoTelGroup)
+◆ Credits :  Myself
 ◆ Language : Python3
 ◆ Source Code :  [BUGHUNTERBOTS](https://t.me/bughunterbots)
-◆ Server : [AWS S3](https://aws.amazon.com/s3)
-◆ Database : [Amazon RDS](https://aws.amazon.com/rds)
-◆ Build Status : Stable(1.5)
-◆ New feature : Stop All filter added
+◆ Server : Heroku
+◆ Database : Postgre SQL
+◆ Build Status : Stable(1.9)
+◆ New feature : Remote connection Option Added
 """
 __mod_name__ = "About"
