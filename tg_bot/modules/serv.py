@@ -14,8 +14,7 @@ from telegram.utils.helpers import escape_markdown
 def old_filter(bot: Bot, update: Update):
     chat = update.effective_chat  # type: Optional[Chat]
     message = update.effective_message  # type: Optional[Message]
-    update.effective_message.reply_text(f" You are Requested to Read /help, Because /filter will not work for me . \n To add a Filter use /add <filter name>", parse_mode=ParseMode.HTML)
-        return
+    message.reply_text("Error")
 
 
 
