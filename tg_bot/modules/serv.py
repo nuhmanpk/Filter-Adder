@@ -1,4 +1,3 @@
-
 import re
 from typing import Optional
 
@@ -9,6 +8,7 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
 
+from tg_bot import dispatcher, LOGGER
 
 @run_async
 def old_filter(bot: Bot, update: Update):
