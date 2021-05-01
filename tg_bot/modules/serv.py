@@ -1,4 +1,24 @@
 
+import re
+from typing import Optional
+
+import telegram
+from telegram import ParseMode, InlineKeyboardMarkup, Message, Chat
+from telegram import Update, Bot
+from telegram.error import BadRequest
+from telegram.ext import CommandHandler, MessageHandler, DispatcherHandlerStop, run_async
+from telegram.utils.helpers import escape_markdown
+
+
+@run_async
+def old_filter(bot: Bot, update: Update):
+    chat = update.effective_chat  # type: Optional[Chat]
+    message = update.effective_message  # type: Optional[Message]
+    update.effective_message.reply_text(f" You are Requested to Read /help, Because /filter will not work for me . \n To add a Filter use /add <filter name>", parse_mode=ParseMode.HTML)
+        return
+
+
+
 __help__ = """
 ◆ Bot Name : *Filter Adder*
 ◆ Creator : [BUGHUNTER](http://t.me//bughunter0)
@@ -11,3 +31,8 @@ __help__ = """
 ◆ New feature : Remote connection Option Added
 """
 __mod_name__ = "About"
+
+
+OLD_HANDLER = CommandHandler("filter",old_filter )
+
+dispatcher.add_handler(OLD_HANDLER)
