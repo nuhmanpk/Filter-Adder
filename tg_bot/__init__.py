@@ -4,6 +4,9 @@ import sys
 
 import telegram.ext as tg
 
+# StartTime For ping
+StartTime = time.time()
+
 # enable logging
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
