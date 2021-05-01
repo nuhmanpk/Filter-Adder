@@ -14,7 +14,7 @@ from tg_bot import dispatcher, LOGGER
 def old_filter(bot: Bot, update: Update):
     chat = update.effective_chat  # type: Optional[Chat]
     message = update.effective_message  # type: Optional[Message]
-    message.reply_text("Error")
+    message.reply_text("/filter Will not work for me \n use /add <filter name> {reply} For Adding new Filter ")
 
 
 
