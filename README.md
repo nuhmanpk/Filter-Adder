@@ -18,7 +18,7 @@ Follow me Here for more [TGChannel](https://t.me/bughunterbots) ഇടുന്�
 
 ## You can also tap the Deploy To Heroku button below to deploy straight to Heroku!
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/nuhmanpk7/Filter-Adder)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/bughunter0/Filter-Adder)
 
 ## Starting the bot.
 
