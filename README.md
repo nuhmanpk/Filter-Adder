@@ -1,9 +1,5 @@
-# Rebuild Everything from Scrap
+#Filter Adder Bot (Telegram) 
 
-  
-
-## Copycats should Give a Credit
- 😆
 ### Test me on telegram (all client)
 
 [Telegram](https://t.me/filteradderbot)
