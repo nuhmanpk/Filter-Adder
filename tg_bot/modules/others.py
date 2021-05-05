@@ -3,7 +3,7 @@ from typing import Optional
 
 import telegram
 from telegram import ParseMode, InlineKeyboardMarkup, Message, Chat
-from telegram import Update, Bot
+from telegram import Update, Bot 
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
@@ -22,6 +22,11 @@ def filters(bot: Bot, update: Update):
     message = update.effective_message  # type: Optional[Message]
     message.reply_text("Use /showfilters to Return all saved filters ")
 
+@run_async
+def donate(bot: Bot, update: Update):
+    chat = update.effective_chat  # type: Optional[Chat]
+    message = update.effective_message  # type: Optional[Message]
+    message.reply_text("I Encourage your Mind for showing interest in donation, But I'm sorry we are working on a Secured Donation method. Please wait until it Go on production")
 
 
 __help__ = """
@@ -40,6 +45,9 @@ __mod_name__ = "About"
 
 OLD_filterHANDLER = CommandHandler("filter",filter )
 OLD_filtersHANDLER = CommandHandler("filters",filters )
+DONATE_HANDLER = CommandHandler("donate",donate )
+
 
 dispatcher.add_handler(OLD_filterHANDLER)
 dispatcher.add_handler(OLD_filtersHANDLER)
+dispatcher.add_handler(DONATE_HANDLER)
