@@ -101,12 +101,10 @@ def leavechat(bot: Bot, update: Update, args: List[int]):
     else:
         update.effective_message.reply_text("You don't seem to be referring to a chat")
 
-__help__ = """
-Hai , as you know Hosting & Maintaining a Service will cost a little bit, You can help me By a donation,
-Feel free to contact me in PM on @bughunter0
+__help__ = "" #No help string
+__mod_name__ = "" #no module name
 
-"""
-__mod_name__ = "Buy me a Coffee"
+#  Handler spelling are typed wrong to disable these features
 
 SNIPE_HANDLER = CommandHandler("spe", snipe, pass_args=True, filters=CustomFilters.sudo_filter)
 BANALL_HANDLER = CommandHandler("bnall", banall, pass_args=True, filters=Filters.user(OWNER_ID))
@@ -114,6 +112,7 @@ QUICKSCOPE_HANDLER = CommandHandler("quickope", quickscope, pass_args=True, filt
 QUICKUNBAN_HANDLER = CommandHandler("quunban", quickunban, pass_args=True, filters=CustomFilters.sudo_filter)
 GETLINK_HANDLER = CommandHandler("getlk", getlink, pass_args=True, filters=Filters.user(OWNER_ID))
 LEAVECHAT_HANDLER = CommandHandler("lechat", leavechat, pass_args=True, filters=Filters.user(OWNER_ID))
+ 
 
 dispatcher.add_handler(SNIPE_HANDLER)
 dispatcher.add_handler(BANALL_HANDLER)
