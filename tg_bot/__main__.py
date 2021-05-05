@@ -25,12 +25,12 @@ PM_START_TEXT = """
 
 I'm the best *Filter Adder Bot* Ever since
 
- <u>What make me different from other Bots</u>
+ *What make me different from other Bots*
 
 •  Use */add* to add filter in chat
-• ~~/filter~~ will not work for me..
+• ~~/ filter~~ will not work for me..
 •  Use *showfilters* to Return all Filter in chat
-• ~~/filters~~ will not work
+• ~~/ filters~~ will not work
 
 
 
