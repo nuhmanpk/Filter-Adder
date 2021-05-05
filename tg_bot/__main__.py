@@ -21,13 +21,20 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 PM_START_TEXT = """
 
 
-*Thank God I'M Up, @bughunter0 work asleep to keep me up*
+*Haha... I'm up Again*
+
+I'm the best *Filter Adder Bot* Ever since
+
+ <u>What make me different from other Bots</u>
+
+•  Use */add* to add filter in chat
+• ~~/filter~~ will not work for me..
+•  Use *showfilters* to Return all Filter in chat
+• ~~/filters~~ will not work
 
 
-Use /add to add filter in chat
-/filter will not work for me..
 
-I'm a filter adder bot , use me to add filters to your group keeping the members in touch when you are afk,
+Use me to add filters to your group keeping the members in touch when you are afk,
 Consider joining on @bughunterbots for further updates . Type /help for options
 
  എന്നെ ഉപയോഗിക്കേണ്ടത് എങ്ങനെ ആണെന്നുള്ളതിൽ എന്തേലും സംശയം ഉണ്ടെങ്കിൽ /help
@@ -43,7 +50,7 @@ HELP_STRINGS = """
 
  - / start: To find out if the bot is alive ... 
  - / help: This message is for your PM to come .... 
- - */ add*: To add a new filter ... 
+ - */add*: To add a new filter ... 
  - / stop: To remove the added filter ...
 
  - /start: Botന് ജീവനുണ്ടോ എന്നറിയാൻ...
