@@ -26,8 +26,8 @@ __help__ = """
 ◆ Source Code :  [BUGHUNTERBOTS](https://t.me/bughunterbots)
 ◆ Server : Heroku
 ◆ Database : Postgre SQL
-◆ Build Status : Stable(1.9)
-◆ New feature : Remote connection Option Added
+◆ Build Status : Stable(2.0)
+◆ New feature : 2x Faster than version 1.9
 """
 __mod_name__ = "About"
 
