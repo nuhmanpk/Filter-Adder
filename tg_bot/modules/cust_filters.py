@@ -306,18 +306,21 @@ def __chat_settings__(chat_id, user_id):
 
 __help__ = """
 
+ *Admin only: *
 
-- / filters: List all 
-* Admin only: *
+ - /showfilters: List all 
  - / add <keyword> <reply message>: Add a filter to this chat.
  The bot will reply to the message whenever the 'keyword' is mentioned. If you reply to a sticker with a keyword, the bot will respond with that sticker.
  Note: All filter keywords are lowercase. If you want your keyword to be a sentence, use quotes.
  Ex: / add "Hey there" How do you do that?
  - / stop <keyword>: Stop that filter ...
+ 
+ ☠☠☠☠DANGER ZONE ☠☠☠☠
+
+ - stopallfilters - Stops all Filters when Initiated
 
 
-
- - /filters: ഈ ചാറ്റിലെ സജീവമായ എല്ലാ ഫിൽട്ടറുകളും പട്ടികപ്പെടുത്തുക.
+ - /showfilters: ഈ ചാറ്റിലെ സജീവമായ എല്ലാ ഫിൽട്ടറുകളും പട്ടികപ്പെടുത്തുക.
 
 *അഡ്‌മിൻ മാത്രം:*
  - /add <keyword> <reply message>: ഈ ചാറ്റിലേക്ക് ഒരു ഫിൽട്ടർ ചേർക്കുക.
@@ -333,8 +336,8 @@ __mod_name__ = " Add Filters"
 
 FILTER_HANDLER = CommandHandler("add", filters)
 STOP_HANDLER = CommandHandler("stop", stop_filter)
-STOPALL_HANDLER = DisableAbleCommandHandler("stopall", stop_all_filters)
-LIST_HANDLER = DisableAbleCommandHandler("filters", list_handlers, admin_ok=True)
+STOPALL_HANDLER = DisableAbleCommandHandler("stopallfilters", stop_all_filters)
+LIST_HANDLER = DisableAbleCommandHandler("showfilters", list_handlers, admin_ok=True)
 CUST_FILTER_HANDLER = MessageHandler(CustomFilters.has_text, reply_filter, edited_updates=True)
 
 dispatcher.add_handler(FILTER_HANDLER)
