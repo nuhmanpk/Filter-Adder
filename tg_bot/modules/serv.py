@@ -11,10 +11,16 @@ from telegram.utils.helpers import escape_markdown
 from tg_bot import dispatcher, LOGGER
 
 @run_async
-def old_filter(bot: Bot, update: Update):
+def filter(bot: Bot, update: Update):
     chat = update.effective_chat  # type: Optional[Chat]
     message = update.effective_message  # type: Optional[Message]
     message.reply_text("/filter Will not work for me \n use /add <filter name> {reply} For Adding new Filter ")
+
+@run_async
+def filters(bot: Bot, update: Update):
+    chat = update.effective_chat  # type: Optional[Chat]
+    message = update.effective_message  # type: Optional[Message]
+    message.reply_text("Use /showfilters to Return all saved filters ")
 
 
 
@@ -32,6 +38,8 @@ __help__ = """
 __mod_name__ = "About"
 
 
-OLD_HANDLER = CommandHandler("filter",old_filter )
+OLD_filterHANDLER = CommandHandler("filter",filter )
+OLD_filtersHANDLER = CommandHandler("filters",filters )
 
-dispatcher.add_handler(OLD_HANDLER)
+dispatcher.add_handler(OLD_filterHANDLER)
+dispatcher.add_handler(OLD_filtersHANDLER)
