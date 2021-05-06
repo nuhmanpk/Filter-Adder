@@ -152,6 +152,7 @@ __help__ = """
 
 /allowconnect on/off/yes/no
 
+/rmkeyboard - Removes the connection keyboard from the chat 
 """
 
 __mod_name__ = "Connections"
