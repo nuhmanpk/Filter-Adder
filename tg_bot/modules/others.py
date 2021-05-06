@@ -28,6 +28,29 @@ def donate(bot: Bot, update: Update):
     message = update.effective_message  # type: Optional[Message]
     message.reply_text("I Encourage your Mind for showing interest in donation, But I'm sorry we are working on a Secured Donation method. Please wait until it Go on production")
 
+@run_async
+def reply_keyboard_remove(bot: Bot, update: Update):
+    reply_keyboard = []
+    reply_keyboard.append([
+        ReplyKeyboardRemove(
+            remove_keyboard=True
+        )
+    ])
+    reply_markup = ReplyKeyboardRemove(
+        remove_keyboard=True
+    )
+    old_message = bot.send_message(
+        chat_id=update.message.chat_id,
+        text='Removing Connection Keyboard',
+        reply_markup=reply_markup,
+        reply_to_message_id=update.message.message_id
+    )
+    bot.delete_message(
+        chat_id=update.message.chat_id,
+        message_id=old_message.message_id
+    )
+
+
 
 __help__ = """
 ◆ Bot Name : *Filter Adder*
@@ -46,8 +69,9 @@ __mod_name__ = "About"
 OLD_filterHANDLER = CommandHandler("filter",filter )
 OLD_filtersHANDLER = CommandHandler("filters",filters )
 DONATE_HANDLER = CommandHandler("donate",donate )
-
+RMKEYBOARD_HANDLER = DisableAbleCommandHandler("rmkeyboard", reply_keyboard_remove)
 
 dispatcher.add_handler(OLD_filterHANDLER)
 dispatcher.add_handler(OLD_filtersHANDLER)
 dispatcher.add_handler(DONATE_HANDLER)
+dispatcher.add_handler(RMKEYBOARD_HANDLER)
