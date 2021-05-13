@@ -2,7 +2,10 @@
 
 ### Test me on telegram (all client)
 
-[Telegram](https://t.me/filteradderbot)
+<A href=https://t.me/filteradderbot>
+<IMG src=https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white></IMG></a>
+
+
 
 ## tgbot
 A modular telegram Python bot running on python3 with an sqlalchemy database.
