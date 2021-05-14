@@ -1,11 +1,11 @@
-<center> <A href=https://python.org><IMG src=http://ForTheBadge.com/images/badges/made-with-python.svg></IMG></A>   </center>
+<center> <A href=https://python.org><IMG src=http://ForTheBadge.com/images/badges/made-with-python.svg alt=Python.org></IMG></A>   </center>
 
 # Filter Adder Bot
 
 ### Test me on telegram (all client)
 
 <A href=https://t.me/filteradderbot>
-<IMG src=https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white></IMG></a>
+<IMG src=https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white alt=Telegramchannel></IMG></a>
 
 
 ## Follow me Here for more 
