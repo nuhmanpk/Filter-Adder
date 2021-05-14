@@ -1,4 +1,6 @@
-# Filter Adder Bot (Telegram) 
+<center> <A href=https://python.org><IMG src=http://ForTheBadge.com/images/badges/made-with-python.svg></IMG></A>   </center>
+
+# Filter Adder Bot
 
 ### Test me on telegram (all client)
 
@@ -11,9 +13,9 @@
 A modular telegram Python bot running on python3 with an sqlalchemy database.
 
 
-Follow me Here for more [TGChannel](https://t.me/bughunterbots) ഇടുന്നതായിരിക്കും. സംശയങ്ങൾക്ക് @bughunterbots എന്ന ഗ്രൂപ്പിൽ വരാവുന്നതാണ്.....
-
-
+Follow me Here for more 
+[TGChannel](https://t.me/bughunterbots)
+ 
 
 ## You can also tap the Deploy To Heroku button below to deploy straight to Heroku!
 
