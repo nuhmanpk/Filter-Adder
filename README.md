@@ -8,20 +8,16 @@
 <IMG src=https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white></IMG></a>
 
 
+## Follow me Here for more 
 
-## tgbot
-A modular telegram Python bot running on python3 with an sqlalchemy database.
-
-
-Follow me Here for more 
-[TGChannel](https://t.me/bughunterbots)
+<A href=https://t.me/bughunterbots><img src=https://img.shields.io/badge/TELEGRAM-Channel-yellowgreen></img></a>
  
 
-## You can also tap the Deploy To Heroku button below to deploy straight to Heroku!
+# You can also tap the Deploy To Heroku button below to deploy straight to Heroku!
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/bughunter0/Filter-Adder)
 
-## Starting the bot.
+### Starting the bot.
 
 Once you've setup your database and your configuration (see below) is complete, simply run:
 
