@@ -10,7 +10,7 @@
 
 ## Follow me Here for more 
 
-<A href=https://t.me/bughunterbots><img src=https://img.shields.io/badge/TELEGRAM-Channel-yellowgreen></img></a>
+<A href=https://t.me/bughunterbots><img src=https://img.shields.io/badge/TELEGRAM-Channel-yellowgreen alt=Telegramchannel></img></a>
  
 
 # You can also tap the Deploy To Heroku button below to deploy straight to Heroku!
